@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "home": "domů",
+    "about": "O mně",
+    "experiences": "Zkušenosti",
+    "education": "Vzdělání",
+    "skills": "Dovednosti"
+  },
+  "pages": {
+    "home": {
+      "title": "Jan Bauer",
+      "subtitle": "Frontend vývojář"
+    },
+    "about": {
+      "first": "Zdravím,\nJsem softwarový vývojář se zaměřením především na vývoj frontendu pro webové aplikace s využítím Reactu a TypeScriptu. Na backendu, pak používám nečastěji NodeJS a TypeScript. Jsem absolvent inženýrského studia informačních technologií na Vysoké škole Báňské – Technické univerzitě v Ostravě, což mi davá určité teoretické znalostí a praktické dovedností v oboru.",
+      "second": "Kromě programování fušuju do editovaní videí, pohyblivé grafiky nebo obrázků. Jinak pokud nejsem zrovna za počítačem, tak rád fotím a natáčím videa pomocí mojeho foťáku a dronu, rád běhám nebo jezdím na kole a potom následně odpočívám u filmů a seriálů."
+    },
+    "experiences": {
+      "kiwi": {
+        "title": "Kiwi.com",
+        "date": "1. 11. 2022 – do současnosti",
+        "position": "Software engineer",
+        "location": "Brno",
+        "description": {
+          "line1": "vývoj booking sekce a jiných služeb",
+          "line2": "práce s ReactJS (Typescriptu), Redux tookit, Next JS, REST API"
+        }
+      },
+      "seznam": {
+        "title": "Seznam.cz",
+        "date": "16. 8. 2021 – 31.10.2022",
+        "position": "Frontend developer",
+        "location": "Brno",
+        "description": {
+          "line1": "vývoj domovské stránky Seznam.cz a jiných služeb",
+          "line2": "práce s ReactJS (Typescriptu), GraphQL, REST API"
+        }
+      },
+      "tieto": {
+        "title": "Tietoevry Czechia",
+        "date": "1. 3. 2018 – 1. 11. 2020",
+        "position": "Software developer",
+        "location": "Ostrava",
+        "description": {
+          "line1": "vývoj zejména webových aplikací",
+          "line2": "práce hlavně s ReactJS (Typescriptu), Spring frameworkem (v Javě), SQL and No-SQL databázemi"
+        }
+      }
+    },
+    "education": {
+      "vsb-ing": {
+        "title": "Vysoká škola báňská – Technická univerzita Ostrava",
+        "faculty": "Fakulta elektrotechniky a informatiky",
+        "study": "Navazující magisterské studium",
+        "year": "2019 - 2021",
+        "location": "Ostrava",
+        "program": "Program: Informační a komunikační technologie",
+        "specialization": "Specializace: Informatika a výpočetní technika"
+      },
+      "vsb-bc": {
+        "title": "Vysoká škola báňská – Technická univerzita Ostrava",
+        "faculty": "Fakulta elektrotechniky a informatiky",
+        "study": "Bakalářské studium",
+        "year": "2016 - 2019",
+        "location": "Ostrava",
+        "program": "Program: Informační a komunikační technologie",
+        "specialization": "Specializace: Informatika a výpočetní technika"
+      }
+    }
+  }
+}

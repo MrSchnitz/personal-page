@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "home": "home",
+    "about": "about",
+    "experiences": "experiences",
+    "education": "education",
+    "skills": "skills"
+  },
+  "pages": {
+    "home": {
+      "title": "Jan Bauer",
+      "subtitle": "Frontend developer"
+    },
+    "about": {
+      "first": "Hello there,\nI am a software developer with a primary focus on frontend development for web-based applications, utilizing React and TypeScript. On the backend, I most commonly use NodeJS and TypeScript. I hold a master's degree in Information Technology from the Technical University of Ostrava, reflecting a solid foundation of theoretical knowledge and practical skills in the field.",
+      "second": "Beyond coding, I enjoy dabbling in video editing, motion graphics, or image editing. Away from the computer, I also like taking photos and videos with my camera and drone or you might spot me biking or jogging, followed by some downtime with movies or TV shows."
+    },
+    "experiences": {
+      "kiwi": {
+        "title": "Kiwi.com",
+        "date": "1. 11. 2022 – now",
+        "position": "Software engineer",
+        "location": "Brno",
+        "description": {
+          "line1": "frontend development of booking section a other services",
+          "line2": "work with ReactJS (Typescript), Redux toolkit, Next JS, REST API"
+        }
+      },
+      "seznam": {
+        "title": "Seznam.cz",
+        "date": "16. 8. 2021 – 31.10.2022",
+        "position": "Frontend developer",
+        "location": "Brno",
+        "description": {
+          "line1": "development of the Seznam.cz homepage and other services",
+          "line2": "work with ReactJS (Typescript), GraphQL, REST API"
+        }
+      },
+      "tieto": {
+        "title": "Tietoevry Czechia",
+        "date": "1. 3. 2018 – 1. 11. 2020",
+        "position": "Software developer",
+        "location": "Ostrava",
+        "description": {
+          "line1": "development of especially web-based applications",
+          "line2": "work mainly with ReactJS (Typescript), Spring framework (Java), SQL and No-SQL databases"
+        }
+      }
+    },
+    "education": {
+      "vsb-ing": {
+        "title": "Technical University of Ostrava",
+        "faculty": "Faculty of Electrical Engineering and Computer Science",
+        "study": "Master study",
+        "year": "2019 - 2021",
+        "location": "Ostrava",
+        "program": "Program: Information and Communication Technology",
+        "specialization": "Specialization: Computer Science and Technology"
+      },
+      "vsb-bc": {
+        "title": "Technical University of Ostrava",
+        "faculty": "Faculty of Electrical Engineering and Computer Science",
+        "study": "Barchelor study",
+        "year": "2016 - 2019",
+        "location": "Ostrava",
+        "program": "Program: Information and Communication Technology",
+        "specialization": "Specialization: Computer Science and Technology"
+      }
+    }
+  }
+}
