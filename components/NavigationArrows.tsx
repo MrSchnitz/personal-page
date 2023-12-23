@@ -66,7 +66,7 @@ export default function NavigationArrows() {
     <>
       {activeLinkIndex !== LINKS.length - 1 && (
         <div
-          className="fixed top-0 right-0 h-full flex items-center transition-colors cursor-pointer hover:bg-slate-500/25 text-white hover:text-pink-500"
+          className="hidden md:fixed top-0 right-0 h-full flex items-center transition-colors cursor-pointer hover:bg-slate-500/25 text-white hover:text-pink-500"
           onClick={handleRedirectRight}
         >
           <FontAwesomeIcon
@@ -80,7 +80,7 @@ export default function NavigationArrows() {
       )}
       {activeLinkIndex !== 0 && (
         <div
-          className="fixed top-0 left-0 h-full flex items-center transition-colors cursor-pointer hover:bg-slate-500/25 text-white hover:text-pink-500"
+          className="hidden md:fixed top-0 left-0 h-full flex items-center transition-colors cursor-pointer hover:bg-slate-500/25 text-white hover:text-pink-500"
           onClick={handleRedirectLeft}
         >
           <FontAwesomeIcon

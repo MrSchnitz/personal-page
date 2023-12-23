@@ -1,16 +1,23 @@
 import React from "react";
+import clsx from "clsx";
 
 const IMG_PATH = "/images/logos.svg";
 
 interface Props {
   title: string;
   icon: string;
+  className?: string;
 }
 
-export default function Skill({ icon, title }: Props) {
+export default function Skill({ icon, title, className }: Props) {
   return (
-    <div className="relative flex flex-col items-center gap-1 cursor-help transition-colors hover:text-pink-500 group/item">
-      <svg className="w-10 h-10">
+    <div
+      className={clsx(
+        "relative flex flex-col items-center gap-1 cursor-help transition-colors hover:text-pink-500 group/item",
+        className,
+      )}
+    >
+      <svg className="w-12 h-12">
         <use xlinkHref={`${IMG_PATH}#${icon}`} />
       </svg>
       <div className="absolute -bottom-6 overflow-hidden">

@@ -11,6 +11,9 @@ const config: Config = {
     //   primary: "#a24964",
     // },
     extend: {
+      spacing:{
+        "basic-page": "35rem"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

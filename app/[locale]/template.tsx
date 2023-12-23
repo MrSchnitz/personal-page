@@ -7,6 +7,7 @@ import React, { useCallback, useState } from "react";
 import useSetAlreadyRenderedOnMount from "@/hooks/useSetAlreadyRenderedOnMount";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import clsx from "clsx";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export default function LayoutTemplate({
   children,
@@ -17,6 +18,7 @@ export default function LayoutTemplate({
   const [isRendered, setIsRendered] = useState<boolean>(false);
 
   const alreadyRendered = useSetAlreadyRenderedOnMount();
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const measureCallBack = useCallback((ref: HTMLDivElement | null) => {
     setMainSectionHeight(
@@ -31,39 +33,46 @@ export default function LayoutTemplate({
   return (
     <>
       <LanguageSwitch />
-      <div className="flex flex-col items-center justify-center w-screen h-screen text-gray-800 transition duration-1000 ease-in-out dark:text-white dark:bg-blueGray-700">
-        <div
-          style={{ minWidth: "35rem", maxWidth: "fit-content" }}
-          className="flex flex-col items-center justify-center w-3/5"
-        >
+      <div className="flex flex-col items-center justify-center p-6 md:p-0 w-full md:h-screen text-gray-800 transition duration-1000 ease-in-out dark:text-white">
+        <div className="flex flex-col items-center justify-center mt-10 md:mt-0 w-full md:min-w-basic-page md:max-w-fit">
           <motion.div
             layoutId="nav"
             initial={{ opacity: alreadyRendered ? 1 : 0 }}
             animate={{ opacity: 1 }}
-            transition={alreadyRendered ? {} : { duration: 0.5, delay: 2.2 }}
+            transition={
+              alreadyRendered
+                ? {}
+                : { duration: 0.5, delay: isDesktop ? 2.2 : 1 }
+            }
           >
             <Navigation />
           </motion.div>
           <motion.div
             layoutId="border-div"
             className={clsx(
-              "flex flex-col items-center justify-center w-full my-6 border-t-2 border-b-2 border-gray-300 dark:border-white",
-              !alreadyRendered && !isRendered && "overflow-hidden",
+              "flex flex-col items-center justify-center w-full my-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-gray-300 dark:border-white",
+              !alreadyRendered && !isRendered && isDesktop && "overflow-hidden",
             )}
             initial={{
-              scaleX: alreadyRendered ? 1 : 0,
-              height: alreadyRendered ? "100%" : 0,
+              scaleX: alreadyRendered || !isDesktop ? 1 : 0,
+              height: alreadyRendered || !isDesktop ? "100%" : 0,
               opacity: alreadyRendered ? 1 : 0,
+              y: !alreadyRendered && !isDesktop ? 100 : 0,
             }}
             animate={{
               scaleX: 1,
               opacity: 1,
-              height: alreadyRendered ? "100%" : `${mainSectionHeight}px`,
+              height:
+                alreadyRendered || !isDesktop
+                  ? "100%"
+                  : `${mainSectionHeight}px`,
+              y: 0,
             }}
             transition={{
               opacity: { duration: 0.5, delay: 0 },
               scaleX: { duration: 1, delay: 0.45 },
               height: { duration: 1, delay: 1.3 },
+              y: { duration: 1, delay: 0.2 },
             }}
             ref={measureCallBack}
             onTransitionEnd={onTransitionEnd}
@@ -72,7 +81,9 @@ export default function LayoutTemplate({
               className="py-8 w-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={alreadyRendered ? {} : { duration: 1, delay: 1 }}
+              transition={
+                alreadyRendered || !isDesktop ? {} : { duration: 1, delay: 1 }
+              }
             >
               <AnimatePresence>
                 <motion.div
@@ -89,7 +100,11 @@ export default function LayoutTemplate({
             layoutId="social-icons"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={alreadyRendered ? {} : { duration: 0.5, delay: 2.2 }}
+            transition={
+              alreadyRendered
+                ? {}
+                : { duration: 0.5, delay: isDesktop ? 2.2 : 1.4 }
+            }
           >
             <Footer />
           </motion.div>

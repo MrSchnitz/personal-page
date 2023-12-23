@@ -5,7 +5,7 @@ export default function SkillsPage() {
   return (
     <div
       className="flex flex-wrap gap-x-10 gap-y-8 justify-around text-white"
-      style={{ width: "35rem" }}
+      style={{ maxWidth: "40rem" }}
     >
       <Skill title="JavaScript" icon="js" />
       <Skill title="TypeScript" icon="ts" />
@@ -22,7 +22,7 @@ export default function SkillsPage() {
       <Skill title="Tailwind CSS" icon="tailwind" />
       <Skill title="NestJS" icon="nestjs" />
       <Skill title="Spring Boot" icon="springboot" />
-      <Skill title="MongoDB" icon="mongo" />
+      <Skill title="MongoDB" icon="mongo" className="hidden md:block" />
       <Skill title="PostgreSQL" icon="postgresql" />
       <Skill title="Figma" icon="figma" />
       <Skill title="Adobe After Effects" icon="afterEffects" />
