@@ -18,10 +18,10 @@ export default function Navigation() {
             <button
               className={clsx(
                 "py-0.5 px-3 text-xs leading-6 uppercase border border-gray-300 rounded-full",
-                "dark:hover:border-primary hover:text-lightBlue-600",
-                "hover:border-lightBlue-600 dark:hover:text-primary transition-all",
+                "dark:hover:border-pink-500 hover:text-lightBlue-600",
+                "hover:border-lightBlue-600 dark:hover:text-pink-500 transition-all",
                 isActive &&
-                  "font-semibold border-2 border-primary text-lightBlue-600 text-primary",
+                  "font-semibold border-2 border-pink-500 text-lightBlue-600 text-pink-500",
               )}
             >
               {t(link.name)}

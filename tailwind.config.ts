@@ -7,16 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      primary: "#a24964",
-      white: "#ffffff",
-    },
+    // colors: {
+    //   primary: "#a24964",
+    // },
     extend: {
-      spacing: {
+      spacing:{
         "basic-page": "35rem",
         "basic-page-m": "40rem",
         "ex-page-m": "40rem",
-        "skills-page": "40rem",
+        "skills-page": "40rem"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
