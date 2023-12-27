@@ -10,7 +10,7 @@ export default function Navigation() {
   const t = useTranslations("navigation");
 
   return (
-    <div className="flex flex-wrap gap-4 md:gap-2 justify-center leading-6 px-4 md:px-0">
+    <div className="flex flex-wrap gap-4 md:gap-2 justify-center leading-6 px-10 md:px-0">
       {LINKS.map((link) => {
         const isActive = pathnameSegment === (link.url ? link.url : null);
         return (

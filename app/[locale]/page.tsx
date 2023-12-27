@@ -12,7 +12,7 @@ export default function Home() {
           alt="Jan"
           style={{ objectPosition: "10%" }}
         />
-        <h1 className="mx-auto text-2xl font-bold tracking-wider text-center sm:text-3xl">
+        <h1 className="mx-auto text-3xl font-bold tracking-wider text-center">
           {t("title")}
         </h1>
         <hr className="w-16 my-6 border-gray-300" />

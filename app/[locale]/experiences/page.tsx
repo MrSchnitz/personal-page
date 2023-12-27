@@ -5,7 +5,7 @@ export default function ExperiencesPage() {
   const t = useTranslations("pages.experiences");
 
   return (
-    <div>
+    <div className="md:max-w-ex-page-m lg:max-w-fit">
       <Experience
         className="mb-6"
         link="https://www.kiwi.com/cz/pages/content/about"

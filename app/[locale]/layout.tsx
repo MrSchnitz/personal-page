@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { locales } from "@/utils/navigation";
-import NavigationArrows from "@/components/NavigationArrows";
+import Controls from "@/components/Controls";
 
 export const metadata: Metadata = {
   title: "Jan Bauer - personal page",
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang={locale ?? "en"}>
       <body>
         <NextIntlClientProvider locale={locale ?? "en"} messages={messages}>
-          <NavigationArrows />
+          <Controls />
           {children}
         </NextIntlClientProvider>
       </body>
