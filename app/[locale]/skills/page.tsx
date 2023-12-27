@@ -3,7 +3,7 @@ import Skill from "@/components/Skill";
 
 export default function SkillsPage() {
   return (
-    <div className="flex flex-wrap gap-x-10 gap-y-8 justify-around text-white md:max-w-skills-page overflow-hidden">
+    <div className="flex flex-wrap gap-x-10 gap-y-8 justify-around text-white md:max-w-skills-page">
       <Skill title="JavaScript" icon="js" />
       <Skill title="TypeScript" icon="ts" />
       <Skill title="HTML" icon="html" />
