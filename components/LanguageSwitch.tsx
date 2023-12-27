@@ -14,8 +14,8 @@ export default function LanguageSwitch() {
     <div className="fixed top-0 right-0 z-10 text-md m-4 text-white">
       <Link
         className={clsx(
-          "transition-colors hover:text-pink-500",
-          fullPathname.includes(en) && "text-pink-500",
+          "transition-colors hover:text-primary",
+          fullPathname.includes(en) && "text-primary",
         )}
         href={pathname}
         locale={en}
@@ -25,8 +25,8 @@ export default function LanguageSwitch() {
       <span className="mx-1">/</span>
       <Link
         className={clsx(
-          "transition-colors hover:text-pink-500",
-          fullPathname.includes(cz) && "text-pink-500",
+          "transition-colors hover:text-primary",
+          fullPathname.includes(cz) && "text-primary",
         )}
         href={pathname}
         locale={cz}

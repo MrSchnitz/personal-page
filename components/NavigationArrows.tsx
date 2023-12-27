@@ -66,13 +66,13 @@ export default function NavigationArrows() {
     <>
       {activeLinkIndex !== LINKS.length - 1 && (
         <div
-          className="fixed top-0 right-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-white hover:text-pink-500"
+          className="fixed top-0 right-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-white hover:text-primary"
           onClick={handleRedirectRight}
         >
           <FontAwesomeIcon
             className={clsx(
               "mx-6 text-4xl",
-              rightArrowPressed && "text-pink-500",
+              rightArrowPressed && "text-primary",
             )}
             icon={faArrowRight}
           />
@@ -80,13 +80,13 @@ export default function NavigationArrows() {
       )}
       {activeLinkIndex !== 0 && (
         <div
-          className="fixed top-0 left-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-white hover:text-pink-500"
+          className="fixed top-0 left-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-white hover:text-primary"
           onClick={handleRedirectLeft}
         >
           <FontAwesomeIcon
             className={clsx(
               "mx-6 text-4xl",
-              leftArrowPressed && "text-pink-500",
+              leftArrowPressed && "text-primary",
             )}
             icon={faArrowLeft}
           />
