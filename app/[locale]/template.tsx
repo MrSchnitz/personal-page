@@ -32,11 +32,11 @@ export default function LayoutTemplate({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen text-gray-800 transition duration-1000 ease-in-out text-white">
+    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen transition duration-1000 ease-in-out text-white">
       <motion.div
         layoutId="nav"
         className={clsx(
-          "sticky py-16 md:p-0 -mx-6 md:m-0 top-0 overflow-hidden md:overflow-visible navigation-scroll",
+          "sticky z-10 py-16 md:p-0 -mx-6 md:m-0 top-0 overflow-hidden md:overflow-visible navigation-scroll",
           isScrolledOut && "navigation-scroll--show md:glass-hide",
         )}
         initial={{ opacity: alreadyRendered ? 1 : 0 }}
@@ -51,7 +51,7 @@ export default function LayoutTemplate({
         <motion.div
           layoutId="border-div"
           className={clsx(
-            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-gray-300 border-white",
+            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-white",
             !alreadyRendered && !isRendered && "overflow-hidden",
           )}
           initial={{
