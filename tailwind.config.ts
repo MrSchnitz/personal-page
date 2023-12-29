@@ -7,11 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      primary: "#a24964",
-      white: "#ffffff",
-    },
     extend: {
+      colors: {
+        primary: "#ad4e6b",
+      },
       spacing: {
         "basic-page": "35rem",
         "basic-page-m": "40rem",

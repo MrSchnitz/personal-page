@@ -10,13 +10,13 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="flex items-center justify-center">
-      <a
-        className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-primary transition-colors"
-        href="https://github.com/MrSchnitz"
-        target="_blank"
-      >
-        <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />
-      </a>
+      {/*<a*/}
+      {/*  className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-primary transition-colors"*/}
+      {/*  href="https://github.com/MrSchnitz"*/}
+      {/*  target="_blank"*/}
+      {/*>*/}
+      {/*  <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />*/}
+      {/*</a>*/}
       <a
         className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-primary transition-colors"
         href="https://linkedin.com/in/jan-bauer-b21735b5"
@@ -25,9 +25,8 @@ export default function Footer() {
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faLinkedinIn} />
       </a>
       <a
-        className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-primary transition-colors"
+        className="link text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-primary transition-colors"
         href="mailto:janbauer.cv@gmail.com"
-        target="_blank"
       >
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faGoogle} />
       </a>
