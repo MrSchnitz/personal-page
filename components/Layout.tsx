@@ -97,7 +97,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <AnimatePresence>
         <motion.div
           layoutId="border-div"
-          className="flex flex-col items-center justify-center w-full py-8 my-6 border-t-2 border-b-2 border-gray-300 dark:border-white overflow-hidden"
+          className="flex flex-col items-center justify-center w-full py-8 my-6 border-t-2 border-b-2 border-gray-300 border-white overflow-hidden"
           // initial={{ height: 0, opacity: 0 }}
           // animate={{
           //   height: `${mainSectionHeightRef.current}px`,

@@ -51,7 +51,7 @@ export default function LayoutTemplate({
         <motion.div
           layoutId="border-div"
           className={clsx(
-            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-gray-300 dark:border-white",
+            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-gray-300 border-white",
             !alreadyRendered && !isRendered && "overflow-hidden",
           )}
           initial={{
