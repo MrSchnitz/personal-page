@@ -32,7 +32,7 @@ export default function LayoutTemplate({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen text-gray-800 transition duration-1000 ease-in-out dark:text-white">
+    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen text-gray-800 transition duration-1000 ease-in-out text-white">
       <motion.div
         layoutId="nav"
         className={clsx(
