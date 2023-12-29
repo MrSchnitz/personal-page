@@ -11,7 +11,7 @@ export default function LanguageSwitch() {
   const [en, cz] = locales;
 
   return (
-    <div className="fixed top-0 right-0 z-10 text-md m-4 text-white">
+    <div className="fixed top-0 right-0 z-20 text-md m-4 text-white">
       <Link
         className={clsx(
           "transition-colors hover:text-primary",
