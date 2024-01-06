@@ -42,7 +42,7 @@ export default function LayoutTemplate({
         initial={{ opacity: alreadyRendered ? 1 : 0 }}
         animate={{ opacity: 1 }}
         transition={
-          alreadyRendered ? {} : { duration: 0.5, delay: isDesktop ? 2.2 : 1 }
+          alreadyRendered ? {} : { duration: 0.5, delay: isDesktop ? 2.1 : 1 }
         }
       >
         <Navigation />
@@ -102,7 +102,7 @@ export default function LayoutTemplate({
           transition={
             alreadyRendered
               ? {}
-              : { duration: 0.5, delay: isDesktop ? 2.2 : 1.4 }
+              : { duration: 0.5, delay: isDesktop ? 2.1 : 1.4 }
           }
         >
           <Footer />
