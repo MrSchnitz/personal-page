@@ -27,7 +27,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang={locale ?? "en"}>
+    <html lang={locale ?? "en"} className="dark">
       <body>
         <NextIntlClientProvider locale={locale ?? "en"} messages={messages}>
           <Controls />

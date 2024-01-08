@@ -6,6 +6,10 @@
     "education": "Vzdělání",
     "skills": "Dovednosti"
   },
+  "navigationArrows": {
+    "left": "Šipka vlevo",
+    "right": "Šipka vpravo"
+  },
   "pages": {
     "home": {
       "title": "Jan Bauer",
@@ -23,7 +27,7 @@
         "location": "Brno",
         "description": {
           "line1": "vývoj booking sekce a jiných služeb",
-          "line2": "práce s ReactJS (Typescriptu), Redux tookit, Next JS, REST API"
+          "line2": "práce s ReactJS (Typescript), Redux tookit, Next JS, REST API"
         }
       },
       "seznam": {
@@ -33,7 +37,7 @@
         "location": "Brno",
         "description": {
           "line1": "vývoj domovské stránky Seznam.cz a jiných služeb",
-          "line2": "práce s ReactJS (Typescriptu), GraphQL, REST API"
+          "line2": "práce s ReactJS (Typescript), GraphQL, REST API"
         }
       },
       "tieto": {
@@ -43,7 +47,7 @@
         "location": "Ostrava",
         "description": {
           "line1": "vývoj zejména webových aplikací",
-          "line2": "práce hlavně s ReactJS (Typescriptu), Spring frameworkem (v Javě), SQL and No-SQL databázemi"
+          "line2": "práce hlavně s ReactJS (Typescript), Spring frameworkem (v Javě), SQL and No-SQL databázemi"
         }
       }
     },

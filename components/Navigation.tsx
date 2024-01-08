@@ -17,11 +17,11 @@ export default function Navigation() {
           <Link key={link.name} href={`/${link.url}`}>
             <button
               className={clsx(
-                "py-0.5 px-3 text-xs leading-6 uppercase border border-gray-300 rounded-full",
-                "hover:border-primary hover:text-lightBlue-600",
-                "hover:border-lightBlue-600 hover:text-primary transition-all",
-                isActive &&
-                  "font-semibold border-2 border-primary text-lightBlue-600 text-primary",
+                "py-0.5 px-3 text-xs leading-6 uppercase border rounded-full",
+                "hover:border-primary hover:text-primary transition-colors",
+                isActive
+                  ? "font-semibold border-2 border-primary dark:border-primary text-primary"
+                  : "text-neutral-700 dark:text-white border-neutral-800 dark:border-gray-300",
               )}
             >
               {t(link.name)}

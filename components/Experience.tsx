@@ -34,7 +34,7 @@ export default function Experience({
           className="object-cover transition-all duration-300 cursor-pointer hover:scale-105"
         />
       </a>
-      <div className="text-sm">
+      <div className="text-sm text-neutral-600 dark:text-white">
         <strong className="text-md font-bold">{title}</strong>
         <p className="font-semibold">{position}</p>
         <p>{date}</p>

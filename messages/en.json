@@ -6,6 +6,10 @@
     "education": "education",
     "skills": "skills"
   },
+  "navigationArrows": {
+    "left": "ArrowLeft",
+    "right": "ArrowRight"
+  },
   "pages": {
     "home": {
       "title": "Jan Bauer",

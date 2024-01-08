@@ -4,13 +4,17 @@ import React from "react";
 import NavigationArrows from "@/components/NavigationArrows";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import { motion } from "framer-motion";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 interface Props {}
 
 export default function Controls({}: Props) {
   return (
     <>
-      <LanguageSwitch />
+      <div className="fixed top-0 right-0 z-20 flex items-center gap-2 text-md m-4 text-white">
+        <LanguageSwitch />
+        <DarkModeToggle />
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

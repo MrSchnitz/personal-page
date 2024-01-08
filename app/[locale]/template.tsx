@@ -32,7 +32,7 @@ export default function LayoutTemplate({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen transition duration-1000 ease-in-out text-white">
+    <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen transition duration-1000 ease-in-out text-neutral-800 dark:text-white">
       <motion.div
         layoutId="nav"
         className={clsx(
@@ -51,7 +51,7 @@ export default function LayoutTemplate({
         <motion.div
           layoutId="border-div"
           className={clsx(
-            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-white",
+            "flex flex-col items-center justify-center w-full mb-3 md:my-6 border-none md:border-solid border-t-2 border-b-2 border-neutral-500 dark:border-white",
             !alreadyRendered && !isRendered && "overflow-hidden",
           )}
           initial={{
