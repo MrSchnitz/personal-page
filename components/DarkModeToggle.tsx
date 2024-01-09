@@ -11,11 +11,7 @@ interface Props {
 }
 
 export default function DarkModeToggle({ className }: Props) {
-  const [isDark, setIsDark] = useState(
-    typeof window !== "undefined"
-      ? document.documentElement.classList.contains("dark")
-      : false,
-  );
+  const [isDark, setIsDark] = useState(true);
 
   const toggleColorScheme = () => {
     setSessionStorageItem(COLOR_SCHEME_KEY, isDark ? "light" : "dark");
@@ -25,7 +21,9 @@ export default function DarkModeToggle({ className }: Props) {
 
   useEffect(() => {
     const colorScheme = getSessionStorageItem(COLOR_SCHEME_KEY);
-    setIsDark(colorScheme === "dark");
+    if (colorScheme) {
+      setIsDark(colorScheme === "dark");
+    }
     if (colorScheme === "light") {
       document?.documentElement?.classList.remove("dark");
     }

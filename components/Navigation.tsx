@@ -21,7 +21,7 @@ export default function Navigation() {
                 "hover:border-primary hover:text-primary transition-colors",
                 isActive
                   ? "font-semibold border-2 border-primary dark:border-primary text-primary"
-                  : "text-neutral-700 dark:text-white border-neutral-800 dark:border-gray-300",
+                  : "text-neutral-800 dark:text-white border-neutral-800 dark:border-gray-300",
               )}
             >
               {t(link.name)}

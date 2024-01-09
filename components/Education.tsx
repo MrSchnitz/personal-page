@@ -25,7 +25,7 @@ export default function Education({
   className,
 }: Props) {
   return (
-    <div className={clsx("flex items-start gap-4", className)}>
+    <div className={clsx("flex items-start gap-3 md:gap-4", className)}>
       <a href={link} target="_blank" className="shrink-0">
         <img
           src={imgSrc}
@@ -35,7 +35,7 @@ export default function Education({
           className="rounded object-cover transition-all duration-300 cursor-pointer hover:scale-105"
         />
       </a>
-      <div className="text-sm text-neutral-600 dark:text-white">
+      <div className="text-sm text-neutral-700 dark:text-white">
         <strong className="text-md font-bold">{title}</strong>
         <p className="font-semibold">{study}</p>
         <p>{location}</p>
