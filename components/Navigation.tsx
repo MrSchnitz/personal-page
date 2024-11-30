@@ -12,7 +12,7 @@ export default function Navigation() {
   return (
     <div className="flex flex-wrap gap-4 md:gap-2 justify-center leading-6 px-10 md:px-0">
       {LINKS.map((link) => {
-        const isActive = pathnameSegment === (link.url ? link.url : null);
+        const isActive = pathnameSegment === (link.url ? link.url.split("/")[1] : null);
         return (
           <Link key={link.name} href={`/${link.url}`}>
             <button

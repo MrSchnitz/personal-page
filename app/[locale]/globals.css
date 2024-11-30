@@ -83,6 +83,14 @@ body::before {
   background: #000000;
 }
 
+.htmlScreen-mobile iframe {
+  /*width: 1024px;*/
+  /*height: 670px;*/
+  border: none;
+  border-radius: 70px;
+  background: #000000;
+}
+
 .dark body::before {
   opacity: 1;
 

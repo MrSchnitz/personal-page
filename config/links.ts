@@ -4,11 +4,11 @@ type Links = {
 };
 
 export const LINKS: Links[] = [
-  { name: "home", url: "" },
-  { name: "about", url: "about" },
-  { name: "experiences", url: "experiences" },
-  { name: "education", url: "education" },
-  { name: "skills", url: "skills" },
+  { name: "home", url: "page/" },
+  { name: "about", url: "page/about" },
+  { name: "experiences", url: "page/experiences" },
+  { name: "education", url: "page/education" },
+  { name: "skills", url: "page/skills" },
 ];
 
 export const getActiveLink = (path: string | null) => {
@@ -16,5 +16,5 @@ export const getActiveLink = (path: string | null) => {
     return 0;
   }
 
-  return LINKS.findIndex((link) => link.url === path);
+  return LINKS.findIndex((link) => link.url === `page/${path}`);
 };
