@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // primary: "#ad4e6b",
-        primary: "#ce5e80",
+        primary: "#ad4e6b",
+        // primary: "#ce5e80",
       },
       spacing: {
         "basic-page": "35rem",
