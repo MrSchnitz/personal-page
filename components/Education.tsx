@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Image from "next/image";
 
 interface Props {
   imgSrc: string;
@@ -27,7 +28,7 @@ export default function Education({
   return (
     <div className={clsx("flex items-start gap-3 md:gap-4", className)}>
       <a href={link} target="_blank" className="shrink-0">
-        <img
+        <Image
           src={imgSrc}
           alt=""
           width={60}

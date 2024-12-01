@@ -1,4 +1,6 @@
+
 import Experience from "@/components/Experience";
+import { getSessionStorageItem } from "@/utils/storage";
 import { useTranslations } from "next-intl";
 
 export default function ExperiencesPage() {
@@ -9,7 +11,8 @@ export default function ExperiencesPage() {
       <Experience
         className="mb-6"
         link="https://www.kiwi.com/cz/pages/content/about"
-        imgSrc={"/images/kiwi.png"}
+        imgSrc={`/images/kiwi.png`}
+        imgSrcWhite={`/images/kiwi_white.png`}
         title={t("kiwi.title")}
         date={t("kiwi.date")}
         position={t("kiwi.position")}
@@ -20,6 +23,7 @@ export default function ExperiencesPage() {
         className="mb-6"
         link="https://o.seznam.cz/"
         imgSrc={"/images/seznam.png"}
+        imgSrcWhite={"/images/seznam_white.png"}
         title={t("seznam.title")}
         date={t("seznam.date")}
         position={t("seznam.position")}
@@ -32,6 +36,7 @@ export default function ExperiencesPage() {
       <Experience
         link="https://www.tieto.com/cz/"
         imgSrc={"/images/tieto.png"}
+        imgSrcWhite={"/images/tieto_white.png"}
         title={t("tieto.title")}
         date={t("tieto.date")}
         position={t("tieto.position")}

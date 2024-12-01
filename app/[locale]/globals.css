@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
+    .blur-bg {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .blur-bg-none {
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+    }
+  }
+}
+
+@supports not (backdrop-filter: blur(5px)) {
+  .not-support-blur-bg {
+    display: none
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -78,8 +98,8 @@ body::before {
 }
 
 .navigation-scroll {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .navigation-scroll::after {
@@ -98,8 +118,8 @@ body::before {
     #e0e0e0,
     transparent
   );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: -1;
   opacity: 0;
   transition: 0.3s all;
@@ -124,4 +144,9 @@ body::before {
   100% {
     opacity: 1;
   }
+}
+
+.fade-bg {
+  opacity: 0;
+  animation: 3s 3s fadeOn forwards;
 }

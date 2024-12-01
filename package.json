@@ -14,12 +14,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-three/drei": "^9.118.0",
+    "@react-three/fiber": "^8.17.10",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.12",
     "next": "14.0.3",
     "next-intl": "^3.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "three": "^0.171.0"
   },
   "devDependencies": {
     "@types/node": "^20",
