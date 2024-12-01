@@ -36,7 +36,12 @@ const Background = () => {
 
   return (
     <>
-      <OrbitControls makeDefault enablePan={false} enableZoom={false} maxZoom={10} />
+      <OrbitControls
+        makeDefault
+        enablePan={false}
+        enableZoom={false}
+        maxZoom={10}
+      />
       {[...Array(300)].map((_, index) => (
         <Text3D
           key={index}
@@ -68,7 +73,7 @@ const Background = () => {
 
 export const SceneBackground = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-0 fade-bg blur-sm md:blur-none not-support-blur-bg">
+    <div className="fixed top-0 left-0 right-0 bottom-0 opacity-0 animate-[fadeOn_3s_2s_forwards] md:animate-[fadeOn_3s_3s_forwards] blur-sm md:blur-none not-support-blur-bg">
       <Canvas
         camera={{
           fov: 90,
