@@ -55,7 +55,7 @@ export default function NavigationArrows() {
           break;
       }
     },
-    [pathnameSegment],
+    [pathnameSegment]
   );
 
   useEffect(() => {
@@ -68,18 +68,18 @@ export default function NavigationArrows() {
     <>
       {activeLinkIndex !== LINKS.length - 1 && (
         <div
-          className="fixed top-0 right-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-neutral-400 dark:text-white hover:text-primary group/arrow"
+          className="fixed top-0 right-0 h-full hidden md:flex items-center transition-all cursor-pointer lg:hover:bg-slate-500/25 text-neutral-400 dark:text-gray-300 hover:text-neutral-600 dark:hover:text-white group/arrow"
           onClick={handleRedirectRight}
         >
           <div className="relative flex flex-col items-center gap-2 mx-2">
             <FontAwesomeIcon
               className={clsx(
-                "mx-6 text-4xl",
-                rightArrowPressed && "text-primary",
+                "mx-6 text-4xl transition-all",
+                rightArrowPressed && "text-neutral-600 dark:text-white"
               )}
               icon={faArrowRight}
             />
-            <span className="absolute -bottom-6 whitespace-nowrap text-xs text-primary transition-all duration-700 opacity-0 group-hover/arrow:opacity-100">
+            <span className="absolute -bottom-6 whitespace-nowrap text-xs text-neutral-700 dark:text-gray-300 transition-all duration-700 opacity-0 group-hover/arrow:opacity-100">
               {t("right")}
             </span>
           </div>
@@ -87,18 +87,18 @@ export default function NavigationArrows() {
       )}
       {activeLinkIndex !== 0 && (
         <div
-          className="fixed top-0 left-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-neutral-400 dark:text-white hover:text-primary group/arrow"
+          className="fixed top-0 left-0 h-full hidden md:flex items-center transition-colors cursor-pointer lg:hover:bg-slate-500/25 text-neutral-400 dark:text-gray-300 hover:text-neutral-600 dark:hover:text-white group/arrow"
           onClick={handleRedirectLeft}
         >
           <div className="relative flex flex-col items-center gap-2 mx-2">
             <FontAwesomeIcon
               className={clsx(
-                "mx-6 text-4xl",
-                leftArrowPressed && "text-primary",
+                "mx-6 text-4xl transition-all",
+                leftArrowPressed && "text-neutral-600 dark:text-white"
               )}
               icon={faArrowLeft}
             />
-            <span className="absolute -bottom-6 whitespace-nowrap text-xs text-primary transition-all duration-700 opacity-0 group-hover/arrow:opacity-100">
+            <span className="absolute -bottom-6 whitespace-nowrap text-xs text-neutral-700 dark:text-gray-300 transition-all duration-700 opacity-0 group-hover/arrow:opacity-100">
               {t("left")}
             </span>
           </div>

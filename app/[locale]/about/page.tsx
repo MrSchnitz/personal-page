@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="mb-6 text-justify text-neutral-700 dark:text-white whitespace-pre-wrap">
         {t("first")}
       </div>
-      <div className="text-justify text-neutral-700 dark:text-white">
+      <div className="text-justify text-neutral-800 dark:text-white">
         {t("second")}
       </div>
     </div>

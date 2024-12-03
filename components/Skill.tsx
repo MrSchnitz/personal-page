@@ -13,15 +13,15 @@ export default function Skill({ icon, title, className }: Props) {
   return (
     <div
       className={clsx(
-        "relative flex flex-col items-center gap-1 cursor-help transition-colors hover:text-primary group/item",
-        className,
+        "relative flex flex-col items-center gap-1 cursor-help transition-colors hover:text-neutral-500 dark:hover:text-gray-300 group/item",
+        className
       )}
     >
       <svg className="w-12 h-12">
         <use xlinkHref={`${IMG_PATH}#${icon}`} />
       </svg>
       <div className="absolute -bottom-6 overflow-hidden">
-        <p className="text-sm whitespace-nowrap -translate-y-full opacity-0 text-primary transition-all duration-500 group-hover/item:translate-y-0 group-hover/item:opacity-100">
+        <p className="text-sm whitespace-nowrap -translate-y-full opacity-0 text-neutral-800 dark:text-white transition-all duration-500 group-hover/item:translate-y-0 group-hover/item:opacity-100">
           {title}
         </p>
       </div>

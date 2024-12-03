@@ -18,10 +18,9 @@ export default function Navigation() {
             <button
               className={clsx(
                 "py-0.5 px-3 text-xs leading-6 uppercase rounded-full",
-                "hover:ring-primary hover:text-primary transition-colors",
-                isActive
-                  ? "font-semibold ring-2 ring-primary dark:ring-primary text-primary"
-                  : "text-neutral-800 ring-1 dark:text-white ring-neutral-800 dark:ring-gray-300",
+                "ring-1 hover:ring-2 transition-all",
+                "text-neutral-800  dark:text-white ring-neutral-800 dark:ring-gray-300",
+                isActive && "font-semibold ring-2"
               )}
             >
               {t(link.name)}

@@ -11,11 +11,11 @@ export default function LanguageSwitch() {
   const [en, cz] = locales;
 
   return (
-    <div className="text-neutral-600 dark:text-white transition-colors">
+    <div className="text-neutral-600 dark:text-white">
       <Link
         className={clsx(
-          "hover:text-primary",
-          fullPathname.includes(en) && "text-primary",
+          "hover:font-bold transition-all",
+          fullPathname.includes(en) && "font-bold"
         )}
         href={pathname}
         locale={en}
@@ -25,8 +25,8 @@ export default function LanguageSwitch() {
       <span className="mx-1">/</span>
       <Link
         className={clsx(
-          "hover:text-primary",
-          fullPathname.includes(cz) && "text-primary",
+          "hover:font-bold transition-all",
+          fullPathname.includes(cz) && "font-bold"
         )}
         href={pathname}
         locale={cz}

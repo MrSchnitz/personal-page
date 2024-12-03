@@ -44,8 +44,8 @@ export default function DarkModeToggle({ className }: Props) {
   return (
     <button
       className={clsx(
-        "text-neutral-600 dark:text-white hover:text-primary transition-colors",
-        className,
+        "text-neutral-600 dark:text-white hover:text-neutral-900 dark:hover:text-gray-300 transition-colors",
+        className
       )}
       onClick={toggleColorScheme}
     >

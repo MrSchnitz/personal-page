@@ -36,7 +36,7 @@ export default function Education({
           className="rounded object-cover transition-all duration-300 cursor-pointer hover:scale-105"
         />
       </a>
-      <div className="text-sm text-neutral-700 dark:text-white">
+      <div className="text-sm text-neutral-800 dark:text-white">
         <strong className="text-md font-bold">{title}</strong>
         <p className="font-semibold">{study}</p>
         <p>{location}</p>

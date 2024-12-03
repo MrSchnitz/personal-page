@@ -5,38 +5,41 @@ import {
   faGoogle,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import React from "react";
+import React, { PropsWithChildren } from "react";
+
+const FooterLink = ({
+  children,
+  href,
+  blank,
+}: PropsWithChildren<{ href: string; blank?: boolean }>) => {
+  return (
+    <a
+      className="text-neutral-500 dark:text-gray-300 hover:text-neutral-600 dark:hover:text-gray-500 transition-colors"
+      href={href}
+      target={blank ? "_blank" : undefined}
+    >
+      {children}
+    </a>
+  );
+};
 
 export default function Footer() {
   return (
     <div className="flex items-center justify-center">
-      {/* <a
-        className="text-neutral-500 dark:text-gray-300 hover:text-lightBlue-600 hover:text-primary transition-colors"
+      {/* <FooterLink
         href="https://github.com/MrSchnitz"
-        target="_blank"
       >
         <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />
-      </a> */}
-      <a
-        className="text-neutral-500 dark:text-gray-300 hover:text-primary transition-colors"
-        href="https://linkedin.com/in/jan-bauer-b21735b5"
-        target="_blank"
-      >
+      </FooterLink> */}
+      <FooterLink href="https://linkedin.com/in/jan-bauer-b21735b5">
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faLinkedinIn} />
-      </a>
-      <a
-        className="text-neutral-500 dark:text-gray-300 hover:text-primary transition-colors"
-        href="mailto:janbauer.cv@gmail.com"
-      >
+      </FooterLink>
+      <FooterLink href="mailto:janbauer.cv@gmail.com">
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faGoogle} />
-      </a>
-      <a
-        className="text-neutral-500 dark:text-gray-300 hover:text-primary transition-colors"
-        href="https://www.youtube.com/@janbauer9576"
-        target="_blank"
-      >
+      </FooterLink>
+      <FooterLink href="https://www.youtube.com/@janbauer9576">
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faYoutube} />
-      </a>
+      </FooterLink>
     </div>
   );
 }
