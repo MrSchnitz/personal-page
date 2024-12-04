@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center text-neutral-700 dark:text-white">
+      <div className="flex flex-col items-center justify-center text-neutral-800 dark:text-white">
         <img
           className="w-40 h-40 mb-6 rounded-full object-cover"
           src="/images/me.jpg"

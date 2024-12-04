@@ -31,13 +31,13 @@ export default function Footer() {
       >
         <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />
       </FooterLink> */}
-      <FooterLink href="https://linkedin.com/in/jan-bauer-b21735b5">
+      <FooterLink href="https://linkedin.com/in/jan-bauer-b21735b5" blank>
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faLinkedinIn} />
       </FooterLink>
       <FooterLink href="mailto:janbauer.cv@gmail.com">
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faGoogle} />
       </FooterLink>
-      <FooterLink href="https://www.youtube.com/@janbauer9576">
+      <FooterLink href="https://www.youtube.com/@janbauer9576" blank>
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faYoutube} />
       </FooterLink>
     </div>

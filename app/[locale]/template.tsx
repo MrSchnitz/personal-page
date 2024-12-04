@@ -34,7 +34,7 @@ export default function LayoutTemplate({
 
   return (
     <div className="flex flex-col items-center justify-center px-6 pb-6 md:p-0 w-full md:h-screen transition duration-1000 ease-in-out text-neutral-800 dark:text-white">
-      <div className="relative md:blur-bg md:py-3 md:rounded-3xl">
+      <div className="md:relative md:blur-bg md:py-3 md:rounded-3xl">
         <motion.div
           layoutId="nav"
           className={clsx(
@@ -90,6 +90,7 @@ export default function LayoutTemplate({
             >
               <AnimatePresence>
                 <motion.div
+                  className="relative"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -100,6 +101,7 @@ export default function LayoutTemplate({
             </motion.div>
           </motion.div>
           <motion.div
+            className="relative"
             layoutId="social-icons"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
