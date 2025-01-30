@@ -26,16 +26,14 @@ const FooterLink = ({
 export default function Footer() {
   return (
     <div className="flex items-center justify-center">
-      {/* <FooterLink
-        href="https://github.com/MrSchnitz"
-      >
-        <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />
-      </FooterLink> */}
       <FooterLink href="https://linkedin.com/in/jan-bauer-b21735b5" blank>
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faLinkedinIn} />
       </FooterLink>
       <FooterLink href="mailto:janbauer.cv@gmail.com">
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faGoogle} />
+      </FooterLink>
+      <FooterLink href="https://github.com/MrSchnitz" blank>
+        <FontAwesomeIcon className="mr-6 text-2xl " icon={faGithub} />
       </FooterLink>
       <FooterLink href="https://www.youtube.com/@janbauer9576" blank>
         <FontAwesomeIcon className="mr-6 text-2xl" icon={faYoutube} />
