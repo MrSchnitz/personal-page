@@ -22,32 +22,49 @@
     "experiences": {
       "kiwi": {
         "title": "Kiwi.com",
-        "date": "1. 11. 2022 – do současnosti",
-        "position": "Software engineer",
+        "date": "1. 11. 2022 – dosud",
+        "position": "Softwarový inženýr",
         "location": "Brno",
         "description": {
-          "line1": "vývoj booking sekce a jiných služeb",
-          "line2": "práce s ReactJS (Typescript), Redux tookit, Next JS, REST API"
+          "line1": "Vývoj rezervační stránky Kiwi.com a dalších služeb",
+          "line2": "Vývoj frontendových řešení pomocí React (TypeScript), Next.js, Redux a XState",
+          "line3": "Tvorba responzivních rozhraní pomocí TailwindCSS a Styled Components na základě Figma návrhů",
+          "line4": "Implementace moderních API integrací pomocí REST a GraphQL",
+          "line5": "Optimalizace webových aplikací pro kompatibilitu s mobilním WebView",
+          "line6": "Práce ve Scrum prostředí napříč několika vývojářskými týmy",
+          "line7": "Implementace sledování analytiky přes Datadog",
+          "line8": "Zajištění kvality kódu pomocí Jest unit testů a Cypress E2E testování",
+          "line9": "Správa nasazení pomocí GitLab CI/CD pipeline",
+          "line10": "Udržování standardů kódu pomocí code review"
         }
       },
       "seznam": {
         "title": "Seznam.cz",
         "date": "16. 8. 2021 – 31.10.2022",
-        "position": "Frontend developer",
+        "position": "Frontend vývojář",
         "location": "Brno",
         "description": {
-          "line1": "vývoj domovské stránky Seznam.cz a jiných služeb",
-          "line2": "práce s ReactJS (Typescript), GraphQL, REST API"
+          "line1": "Vývoj hlavní stránky Seznam.cz, profilu Seznam.cz a dalších služeb",
+          "line3": "Tvorba škálovatelných frontendových řešení pomocí React (TypeScript), Redux, Redux-Saga a Node.js",
+          "line4": "Implementace moderních API integrací pomocí REST a GraphQL",
+          "line5": "Tvorba responzivního UI pomocí TailwindCSS a SCSS podle Figma návrhů",
+          "line2": "Práce v agilním týmu s backend, UX/UI a PM specialisty",
+          "line6": "Spolupráce na multiplatformních projektech",
+          "line7": "Sběr analytických dat využívaných v Grafaně",
+          "line8": "Udržování kvality kódu pomocí Jest unit testů a code review"
         }
       },
       "tieto": {
         "title": "Tietoevry Czechia",
         "date": "1. 3. 2018 – 1. 11. 2020",
-        "position": "Software developer",
+        "position": "Softwarový vývojář",
         "location": "Ostrava",
         "description": {
-          "line1": "vývoj zejména webových aplikací",
-          "line2": "práce hlavně s ReactJS (Typescript), Spring frameworkem (v Javě), SQL and No-SQL databázemi"
+          "line1": "První zkušenost s vývojem enterprise webových aplikací",
+          "line2": "Vývoj full-stack řešení pro interní firemní aplikace",
+          "line3": "Frontend: React (TypeScript), Redux, Redux-saga, Node.js, SCSS",
+          "line4": "Backend: Java, Spring Boot, PostgreSQL, MongoDB",
+          "line5": "Práce v agilním vývojovém prostředí"
         }
       }
     },

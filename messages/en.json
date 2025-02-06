@@ -26,8 +26,16 @@
         "position": "Software engineer",
         "location": "Brno",
         "description": {
-          "line1": "frontend development of booking section a other services",
-          "line2": "work with ReactJS (Typescript), Redux toolkit, Next JS, REST API"
+          "line1": "Development of the Kiwi.com Booking page and other services",
+          "line2": "Delivered frontend solutions using React (TypeScript), Next.js, Redux and XState",
+          "line3": "Built responsive interfaces with TailwindCSS and Styled Components based on Figma designs",
+          "line4": "Implemented modern API integrations with REST and GraphQL",
+          "line5": "Optimized web applications for mobile WebView compatibility",
+          "line6": "Worked in a Scrum environment across multiple engineering teams",
+          "line7": "Implemented analytics tracking through Datadog for data-driven improvements",
+          "line8": "Ensured code quality through Jest unit tests and Cypress E2E testing",
+          "line9": "Managed deployments through GitLab CI/CD pipelines",
+          "line10": "Maintained code standards through code reviews"
         }
       },
       "seznam": {
@@ -36,8 +44,14 @@
         "position": "Frontend developer",
         "location": "Brno",
         "description": {
-          "line1": "development of the Seznam.cz homepage and other services",
-          "line2": "work with ReactJS (Typescript), GraphQL, REST API"
+          "line1": "Development of Seznam.cz homepage, Seznam.cz profile and other services",
+          "line3": "Built scalable frontend solutions using React (TypeScript), Redux, Redux-Saga, and Node.js",
+          "line4": "Implemented modern API integrations with REST and GraphQL",
+          "line5": "Created responsive UI using TailwindCSS and SCSS following Figma designs",
+          "line2": "Worked in a cross-functional agile team with backend, UX/UI, and PM",
+          "line6": "Collaborated in cross-platform initiatives",
+          "line7": "Collected analytics data used in Grafana",
+          "line8": "Maintained code quality through Jest unit testing and code reviews"
         }
       },
       "tieto": {
@@ -46,8 +60,11 @@
         "position": "Software developer",
         "location": "Ostrava",
         "description": {
-          "line1": "development of especially web-based applications",
-          "line2": "work mainly with ReactJS (Typescript), Spring framework (Java), SQL and No-SQL databases"
+          "line1": "First peek into enterprise web development",
+          "line2": "Developed full-stack solutions for internal business applications",
+          "line3": "Frontend: React (TypeScript), Redux, Redux-saga, Node.js, SCSS",
+          "line4": "Backend: Java, Spring Boot, PostgreSQL, MongoDB",
+          "line5": "Collaborated in an agile development environment"
         }
       }
     },
