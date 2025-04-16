@@ -1,5 +1,5 @@
 ## Jan Bauer's personal page
-### 2023
+### Latest
 
 Run the development server:
 
